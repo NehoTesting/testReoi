@@ -1,0 +1,63 @@
+.el-form {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	max-width: 455px;
+	z-index: 40;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	.el-form-item {
+		& input {
+			width: 220px;
+		}
+		max-width: 350px;
+	}
+	.signup-a {
+		cursor: pointer;
+		color: $clr2;
+	}
+	.el-form-item__content {
+		margin: 0 auto;
+	}
+	.login-msg {
+		margin: 20px auto;
+		font-weight: bold;
+	}
+}
+
+.el-button--primary {
+	background-color: $clr2;
+	border: none;
+	transition: all .3s ease;
+	&.el-button--primary:hover,
+	.el-button--primary:focus {
+		background-color: lighten($clr2, 5%);
+	}
+}
+.login-cancel-btn:active,
+.login-cancel-btn:focus,
+.login-cancel-btn:hover {
+	color: $clr2;
+}
+.el-button:active,
+.el-button:focus,
+.el-button:hover {
+	border-color: $clr2;
+}
+
+.modal-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.4;
+	z-index: 10;
+}

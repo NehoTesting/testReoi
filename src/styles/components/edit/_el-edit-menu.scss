@@ -1,0 +1,47 @@
+.el-edit-menu {
+	pointer-events: none;
+	position: absolute;
+	z-index: 500;
+	top: 0;
+	left: 90%;
+	& ul {
+		max-width: 80px;
+		pointer-events: all;
+		margin: 0 auto;
+		background-color: $clr2;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		display: flex;
+		& i {
+			padding: 10px;
+			color: #fff;
+			margin-right: 0 !important;
+			cursor: pointer;
+		}
+	}
+}
+
+.el-edit-menu-small {
+	pointer-events: none;
+	width: 100%;
+	display: flex;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	justify-content: flex-end;
+	& ul {
+		pointer-events: all;
+		margin: 0;
+		background-color: $clr2;
+		max-height: 40px;
+		border-radius: 10px;
+		display: flex;
+		& i {
+			font-size: 0.85rem;
+			padding: 10px;
+			color: #fff;
+			margin-right: 0 !important;
+			cursor: pointer;
+		}
+	}
+}

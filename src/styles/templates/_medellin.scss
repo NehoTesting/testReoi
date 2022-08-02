@@ -1,0 +1,86 @@
+.web-form-2 {
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	display: flex;
+	justify-content: center;
+	> * {
+		margin: 1rem;
+	}
+}
+
+.test {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	.md-nav {
+		margin-top: 1rem;
+		.md-nav-title:first-child {
+			display: inline;
+			margin-right: 8rem;
+		}
+		.md-nav-btns {
+			display: inline;
+		}
+		margin-bottom: 15rem;
+	}
+	.card-text {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		:nth-child(3) {
+			margin-top: 3rem;
+		}
+		height: 20rem;
+		> * {
+			display: block;
+		}
+	}
+}
+
+.card-image-md {
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	span.web-txt {
+		display: block;
+		width: 20ch;
+	}
+}
+
+.section-md {
+	.card-text-md {
+		max-height: 44rem;
+		.txt-md {
+			height: 44rem;
+			margin-left: 5rem;
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.footer-md {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.div-v {
+		margin-right: 3rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		& .web-txt {
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 !important;
+		}
+	}
+	.div-v > * {
+		margin-bottom: 0.5rem;
+	}
+}

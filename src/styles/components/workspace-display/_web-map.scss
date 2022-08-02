@@ -1,0 +1,65 @@
+.web-map {
+    display: flex;
+    position: relative;
+    width: 100% !important;
+}
+
+.web-map-1 {
+    .vue-map-container {
+        display: flex;
+        width: 100% !important;
+    }
+}
+
+.cupcake-map {
+    border: 1px solid rgba(184, 184, 184, 0.63);
+    border-radius: 5px;
+    text-align: center;
+    @include for-wide-layout {
+        margin: 0 30px 30px 0;
+    }
+}
+
+.map-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cmp-span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .web-img {
+        display: flex;
+        align-self: center;
+        margin: auto;
+        @include for-mobile-layout {
+            width: 150%!important; 
+        }
+    }
+}
+
+.map-v-cupcake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .web-img {
+        display: flex;
+        align-self: center;
+        margin: auto;
+    }
+}
+
+.map-v-content {
+    width: 500px; 
+    height: 300px;
+    @include for-mobile-layout {
+        width: 300px; 
+        height: 200px;
+    }
+}
+
+.map-regular-content {
+    width: 500px; 
+    height: 300px;
+}

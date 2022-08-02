@@ -1,0 +1,34 @@
+.headernav-ws {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .navbar-ws {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .header-ws-title {
+        max-width: 30ch;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+    .header-ws {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .header-ws-div-btns {
+        margin-bottom: 80px;
+    }
+}
+

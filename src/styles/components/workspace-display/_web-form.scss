@@ -1,0 +1,20 @@
+.web-form {
+    width: 50% !important;
+    margin: 0 auto !important;
+    .el-input {
+        padding: 0;
+        margin-bottom: 3px;
+        width: 100%;
+        border: 1px solid rgb(230, 230, 230);
+    }
+    .el-textarea__inner{
+        border: 1px solid rgb(230, 230, 230);
+        height: 10rem !important;
+        margin-bottom: 10px !important;
+        font-family: Arial;
+    }
+}
+        .web-form-1 .web-button {
+            margin-top: 10px !important;
+            background-color: #fff !important;
+        }

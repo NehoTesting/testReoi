@@ -1,0 +1,19 @@
+.edit-video {
+    .el-input {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+    .search-vids {
+        margin: 10px;
+    }
+    .search-vid-preview {
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            img {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+

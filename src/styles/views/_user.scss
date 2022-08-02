@@ -1,0 +1,54 @@
+.user-profile {
+	overflow-x: hidden;
+	height: 92.3vh;
+	padding-right: 3rem;
+	border-top: 1px solid rgba(186, 186, 186, 0.249);
+	h3 {
+		padding-left: .1rem;
+		margin: 1.5rem 0;
+	}
+	.main-section {
+		height: 100%;
+		text-align: center;
+		width: 100%;
+		padding-left: 2rem;
+		p {
+			padding-bottom: 2rem;
+		}
+	}
+	.user-tmp-list {
+		padding-top: 2rem;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.user-tmp-display {
+			box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.02);
+			margin-bottom: 1rem;
+			padding: 0.4rem;
+			border: 1px solid rgba(0, 0, 0, 0.074);
+		}
+	}
+
+	& .user-tmp-name {
+		display: block;
+		text-align: center;
+	}
+	button {
+		background-color: #fff;
+		color: $clr2;
+		outline: none;
+		border: none;
+		margin: 3px;
+		padding: 3px 5px;
+	}
+}
+
+.tmp-img-container {
+	width: rem(250px);
+	height: rem(160px);
+	.user-tmp-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 0px 0px;
+	}
+}

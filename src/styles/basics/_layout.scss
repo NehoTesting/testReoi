@@ -1,0 +1,24 @@
+ .site-preview .workspace {
+    display: grid !important; 
+    grid-template-columns: 
+    minmax(1rem, 1fr)
+    minmax(auto, 1400px)
+    minmax(1rem, 1fr);
+
+    >* {
+        grid-column: 1 / -1;    
+    }
+}
+    .web-container{
+padding-left: 2rem;
+padding-right: 2rem;
+padding-top: 2rem;
+    }
+.full {
+grid-column: 1 / -1;
+}
+
+.cmp-span {
+    display:inline-block;
+    position: relative;
+}

@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: SourceSansPro, sans-serif;
+	color: $clr2;
+	@include scrollBar(.5rem,
+	lighten($clr2, 5%));
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	overflow-y: scroll;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-family: raleway;
+}
+body[data-aos-duration='7000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='7000'] {
+	transition-duration: 7000ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 1em;
+}
+
+h1 {
+	font-size: em(66px, 16px);
+}
+
+img {
+	width: 100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+i {
+	font-family: raleway;
+	font-style: none;
+}
+
+ul {
+	padding: 0;
+}
+
+.el-slider__bar {
+	background-color: $clr3;
+}
+
+.el-slider__button {
+	border-color: $clr3;
+}
+.el-input {
+	margin: 0;
+	display: flex;
+	align-content: flex-end !important;
+}
+.el-select,
+.el-input {
+	width: 80%;
+}
+
+.el-slider__runway {
+	background-color: lighten($clr3, 15%);
+}
+
+.el-input__inner {
+	height: 33px;
+}
+
+.el-collapse-item__content {
+	padding-left: 10px;
+	margin-top: 8px;
+}
+
+.el-collapse-item__header {
+	padding-left: 10px;
+	font-size: 1rem;
+	text-align: left;
+}
+
+.el-collapse-item__header:hover,
+.el-collapse-item__header,
+.el-collapse-item__wrap,
+.el-collapse-item__content,
+.el-collapse-item__header:active,
+.el-collapse-item__header:focus {
+	color: unset;
+	transition: all .3s ease;
+	background-color: transparent;
+}
+
+.el-collapse-item__header:hover {
+	background: #e9e9fc79;
+}
+
+.el-autocomplete {
+	width: 100%;
+	.el-input {
+		width: 100%;
+	}
+}
+
+.is-active {
+	color: inherit;
+}
+
+.el-collapse-item__header.focusing:focus:not(:hover) {
+	color: unset !important;
+}
+.el-collapse-item__header:focus:not(:hover) {
+	color: unset !important;
+}
+$--color-primary: #30475e !default;
+
+.el-collapse {
+	border: none;
+}
+.el-select,
+.el-input__inner:focus {
+	border-color: $clr2 !important;
+}
+
+.el-checkbox,
+.el-checkbox__label {
+	color: $clr2;
+
+	font-size: 0.8rem;
+}

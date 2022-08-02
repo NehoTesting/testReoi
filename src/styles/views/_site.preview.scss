@@ -1,0 +1,35 @@
+.preview-bar {
+	width: 100%;
+	z-index: 20;
+	box-shadow: 0 2px 18px 0 rgba(129, 162, 182, .2);
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 72px;
+	padding: 0 rem(30px);
+	background: #fff;
+	& img {
+		width: 200px;
+	}
+	.preview-bar-btn {
+		border: none;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0 rem(27px);
+		height: 42px;
+		line-height: 42px;
+		border-radius: 21px;
+		text-align: center;
+		color: #fff;
+		background: $clr3;
+		white-space: nowrap;
+		text-decoration: none;
+		margin-left: 1rem;
+		transition: all .3s ease;
+		&:hover {
+			background: lighten($clr3, 5%);
+		}
+	}
+}

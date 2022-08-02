@@ -1,0 +1,175 @@
+    .web-card-1-col {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            margin-bottom: 25px;
+        }
+    }
+    
+    .web-card-2-row {
+        display: flex;
+        align-items: center;
+        & img {
+            object-fit: cover;
+            max-width: 80%;
+        }
+    }
+    
+    .web-card-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .web-card-2-row {
+        display: flex;
+        align-items: center;
+        & img {
+            max-width: 100%;
+        }
+    }
+    
+    .web-card-3-container {
+        & img {
+            background-image: url('https://i.ibb.co/w63tCS8/bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 400px !important;
+            // background-position: ;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .web-card-3-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        margin-left: 10px;
+        & img {
+            max-width: 400px;
+        }
+    }
+    
+    .web-card-3-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2em;
+    }
+    
+    .web-card-3-pa {
+        font-size: 1rem;
+        max-width: 60ch !important;
+        color: grey;
+        margin: 0;
+    }
+    
+    .card-5-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 8.5rem;
+        padding-left: 8.5rem;
+        & .workspace2 {
+            & :nth-child(1) {
+                max-width: 50%;
+            }
+        }
+    }
+    
+    .card-5-div {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2em;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+        max-width: 75ch;
+        margin-bottom: 50px;
+        & .card-5-title {
+            display: block;
+            max-width: 20ch;
+            font-weight: bold;
+            line-height: 1.1em;
+            padding: 0;
+            padding-bottom: 20px;
+            margin: 0 0 50px 0;
+        }
+        & .header-5-pa {
+            display: block;
+            line-height: 1.1em;
+            padding: 0;
+            margin-bottom: 20px;
+            margin-bottom: 50px !important;
+            span {
+                min-width: 20ch;
+            }
+        }
+    }
+    
+    @media(max-width: $break-normal) {
+        .card-5-div {
+             :nth-child(2) {
+                font-size: 2rem !important;
+            }
+        }
+    }
+    
+    @media(max-width: $break-narrow) {
+        .card-5-div {
+            margin-left: 10px !important;
+            &>* {
+                margin-bottom: 30px;
+            }
+        }
+        .card-5-title {
+            font-size: 2.7rem !important;
+        }
+        .card-6-div {
+            margin-left: 0 !important;
+        }
+    }
+    
+    .card-6-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+    
+    .card-6-div {
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
+        margin: 0px 5px 0px 5px;
+        padding: 45px 20px 35px 20px;
+        img {
+            max-width: 300px;
+        }
+        & .card-6-title {
+            font-weight: bold;
+            max-width: 60ch;
+            margin: 0;
+            padding: 0;
+        }
+        & .card-6-pa {
+            display: block;
+            width: 100%;
+            width: 35ch;
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            line-height: 1.65 !important;
+            color: #515151 !important;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }

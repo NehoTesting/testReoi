@@ -1,0 +1,59 @@
+.colors-pagination {
+	.palette {
+		.change-color-method {
+			margin-top: 1rem;
+			font-size: 0.8rem;
+			z-index: 1;
+			& :first-child {
+				padding-right: 0.4rem;
+			}
+			div {
+				display: inline-block;
+				width: 1.8rem;
+				height: 1.8rem;
+			}
+		}
+
+		li {
+			display: inline-block;
+			border: 1px solid rgba(128, 128, 128, 0.575);
+			border-radius: 50%;
+			height: rem(20px);
+			width: rem(20px);
+			z-index: 5;
+			padding-top: 1rem;
+		}
+		li:not(:last-of-type) {
+			margin-right: .5rem;
+		}
+		.el-icon-close:before,
+		.el-icon-arrow-down:before {
+			content: "";
+		}
+	}
+	.transparent {
+		position: relative;
+		span {
+			position: absolute;
+			top: -8px;
+			transform: rotate(20deg);
+			margin: 0 auto;
+			left: 3px;
+			opacity: 40%;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+.select-color {
+	ul i {
+		padding-left: 1rem;
+		padding-right: .5rem;
+		z-index: 1;
+		font-size: 1rem;
+	}
+	& .color-text {
+		font-size: 1.2rem;
+		padding: 3px 15px 4px 15px;
+	}
+}

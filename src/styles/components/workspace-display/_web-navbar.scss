@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.hamburger {
+    display: none !important;
+}
+
+.navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 200px;
+    width: 100%;
+    & img {
+        max-height: 100px;
+        // max-width: 9.5rem;
+    }
+    & .web-div-logo-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navbar-2-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-2-menu-link {
+    padding: 15px 0;
+    margin: 0 15px;
+    transition: all 0.1s linear;
+    line-height: 20px;
+}
+
+.login-btn {
+    cursor: pointer;
+}
+
+@media (max-width:$break-wide) {
+    .navbar-1 {
+        .on-edit {
+            display: none !important;
+        }
+        flex-direction: row !important;
+        .hamburger {
+            display: flex !important;
+        }
+        .web-div-nav-btns {
+            display: none !important;
+        }
+    }
+    .navbar-2-container {
+        flex-direction: row !important;
+        color: #fff;
+    }
+    .hamburger {
+        display: flex !important;
+    }
+    .navbar-2-div {
+        display: none !important;
+    }
+}

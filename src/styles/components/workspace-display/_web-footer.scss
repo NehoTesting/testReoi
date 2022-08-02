@@ -1,0 +1,13 @@
+.footer-1 {
+    text-align: center;
+    & a img {
+        max-width: 30px;
+        margin: 10px 20px 0;
+        cursor: pointer;
+    }
+    & .social-btns-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

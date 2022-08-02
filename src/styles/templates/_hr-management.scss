@@ -1,0 +1,149 @@
+.web-header-hr {
+	background-image: url(https://i.ibb.co/QkSDZz7/header-bg.png);
+	background-color: rgb(20, 177, 171);
+	color: black;
+	background-repeat: no-repeat;
+	min-height: 40rem;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	.navbar-1-hr {
+		position: absolute;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		.hr-nav-btns-div {
+			color: #fff;
+			margin: 20px 50px 0 0;
+		}
+		.web-div-logo-container {
+			padding: 0;
+		}
+	}
+	.header-hr-div {
+		display: flex;
+		flex-direction: column;
+		max-width: 54ch;
+		padding-bottom: 5rem;
+		.header-hr-h1 {
+			color: black;
+			text-align: left;
+		}
+		& :nth-child(2) {
+			text-align: left;
+			margin-bottom: 30px;
+		}
+		& :nth-child(3) {
+			max-width: 60ch;
+			margin-bottom: 52px;
+		}
+		& :nth-child(4) {
+			a {
+				background-color: rgb(20, 177, 171);
+				color: #fff;
+				padding: 0.8rem !important;
+				border: 1px solid #fff;
+				margin-left: 3px;
+			}
+		}
+		.header-hr-p {
+			text-align: left;
+			color: black;
+		}
+	}
+}
+
+.web-img-1 {
+	span {
+		margin-bottom: 100px;
+		img {
+			object-fit: contain;
+		}
+	}
+}
+
+.web-card-1-row-hr {
+	padding: 50px 20px;
+	.web-card-1-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	& > * {
+		width: 50%;
+	}
+}
+
+.web-sec-cards-hr {
+	margin-bottom: 100px;
+	section {
+		height: rem(350px);
+		span {
+			text-align: center;
+			max-height: 13.75rem;
+			a {
+				color: #fff;
+				background-color: #14b1ab;
+				padding: 8px 15px !important;
+			}
+			img {
+				max-height: inherit;
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+.footer-1 {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 980px) {
+	.web-card-1-row-hr,
+	.web-sec-cards-hr {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		& > * {
+			margin-bottom: 50px;
+		}
+	}
+	.web-txt-1 {
+		text-align: center;
+	}
+	.navbar-1-hr {
+		flex-direction: row !important;
+		padding: 0 20px;
+	}
+	.hr-nav-btns-div {
+		display: none;
+	}
+	.web-card-1-row-hr {
+		& > * {
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: $break-narrow) {
+	.web-header-hr {
+		min-height: 32rem !important;
+	}
+	.header-hr-div {
+		& :nth-child(4) {
+			text-align: center !important;
+		}
+	}
+	.web-sec-cards-hr {
+		section {
+			margin-bottom: 80px !important;
+		}
+	}
+}
